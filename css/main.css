@@ -3,30 +3,6 @@
     margin-right: 10%;
 }
 
-#active {
-    color: orangered;
-}
-
-.container h1 {
-    font-size: 20px;
-}
-
-.container img {
-    width: 350px;
-    height: auto;
-    max-width: 30%;
-    height: auto;
-    float: left;
-    padding: 30px;
-}
-
-.container p {
-    padding: 30px;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    font-family: 'Rubik', sans-serif;
-}
-
 body {
     margin: 0 auto;
     font-size: 1rem;
@@ -79,6 +55,7 @@ main {
 h1 {
     margin-left: 50px;
     font-family: 'Habibi', serif;
+    font-size: 1.5rem;
 }
 
 h2 {
@@ -87,28 +64,49 @@ h2 {
     font-family: 'Habibi', serif;
 }
 
-main ul li {
-    text-decoration: none;
-    display: inline;
-}
-
 main li {
     padding-left: 30px;
     font-size: 30px;
 }
 
+main ul li {
+    text-decoration: none;
+    display: inline;
+}
+
 .sub-nav button {
-    padding: 15px;
-    margin: 15px;
-    width: auto;
+    padding: 20px;
+    margin: 10px;
     background-color: greenyellow;
+    border-radius: 10px;
+}
+
+#active {
+    color: orangered;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+}
+
+.container img {
+    width: 350px;
+    height: auto;
+    max-width: 30%;
+    height: auto;
+    float: left;
+    padding: 30px;
+}
+
+.container p {
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-family: 'Rubik', sans-serif;
 }
 
 footer {
-    background-color: #BDFF0A;
-    padding-top: 15px;
-    color: #010324;
-    width: 100%;
+    padding-top: 10px;
     height: 40px;
     clear: both;
 }
@@ -121,40 +119,40 @@ footer a {
 /*Responsive*/
 
 @media only screen and (max-width: 30rem) {
+    .wrapper {
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
     body {
         font-size: 0.75rem;
         line-height: 1.4rem;
     }
 
-    .wrapper {
-        min-width: 30rem;
-        margin: 0 auto;
-    }
-
     h1 {
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     .container img {
-        margin: 80px;
+        margin: 30px;
         padding: 0;
         max-width: 100%;
         height: auto;
-        float: right;
     }
 
     .container p {
         font-size: .75rem;
         line-height: 1.4rem;
-        padding-bottom: 25px;
+        padding-bottom: 5px;
     }
 
     nav ul li {
         display: block;
         font-family: 'Rubik', sans-serif;
         border: none;
-        margin: 10px 0;
+        margin: 0px 0;
         font-size: .75rem;
+        background-color: #FFFC70;
     }
 
     nav ul {
@@ -166,7 +164,6 @@ footer a {
     }
 
     .sub-nav button {
-        padding: 8px;
-        margin: 8px;
+        margin: 10px;
     }
 }
